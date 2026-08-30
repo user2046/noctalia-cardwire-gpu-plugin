@@ -1,0 +1,37 @@
+id           = "you/cardwire-gpu"
+name         = "Cardwire GPU Mode"
+version      = "1.0.0"
+plugin_api   = 8
+min_noctalia = "5.0.0-beta.4"
+author       = "you"
+license      = "MIT"
+icon         = "cpu"
+description  = "Switch GPU mode (Integrated / Hybrid / Smart) via the cardwire daemon."
+tags         = ["bar", "panel", "service", "hardware", "system"]
+dependencies = ["cardwire"]
+
+# Shared plugin-level setting, seeded into every entry (widget, panel, service).
+[[setting]]
+key             = "poll_interval_ms"
+type            = "int"
+label_key       = "settings.poll_interval_ms.label"
+description_key = "settings.poll_interval_ms.description"
+default         = 3000
+min             = 1000
+max             = 30000
+
+[[widget]]
+id    = "gpu_mode"
+entry = "widget.luau"
+
+[[panel]]
+id        = "panel"
+entry     = "panel.luau"
+width     = 300
+height    = 340
+placement = "floating"
+position  = "auto"
+
+[[service]]
+id    = "service"
+entry = "service.luau"

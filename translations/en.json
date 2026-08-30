@@ -1,0 +1,40 @@
+{
+  "mode.integrated": "Integrated",
+  "mode.integrated.desc": "iGPU only — best battery life",
+  "mode.hybrid": "Hybrid",
+  "mode.hybrid.desc": "Both GPUs available, apps choose",
+  "mode.smart": "Smart",
+  "mode.smart.desc": "dGPU blocked by default, auto-allowed for approved apps",
+
+  "panel.title": "GPU Mode",
+  "panel.applying": "Applying…",
+
+  "confirm.title": "Before you switch",
+  "confirm.body": "Switching to or from Hybrid mode blocks or unblocks the dedicated GPU. This can crash apps currently using it. Close GPU-heavy apps and disconnect any external display connected to the dedicated GPU before continuing.",
+  "confirm.target_prefix": "Switch to",
+  "confirm.cancel": "Cancel",
+  "confirm.proceed": "Switch anyway",
+
+  "logout.title": "Mode switched",
+  "logout.body": "For the new GPU mode to fully take effect, it's best to end this session and log back in. End it now?",
+  "logout.later": "Later",
+  "logout.now": "End session",
+  "logout.busy": "Ending session…",
+  "logout.error.title": "Couldn't end session",
+  "logout.error.body": "loginctl returned an error. You can still log out manually.",
+
+  "widget.tooltip": "Click to change GPU mode",
+  "widget.error": "GPU?",
+  "widget.error.tooltip": "cardwire is missing or not responding — click to open the picker",
+
+  "notify.title": "GPU mode changed",
+  "notify.error.title": "Could not change GPU mode",
+  "notify.error.body": "cardwire returned an error. Check the log for details.",
+
+  "integrated.applied": "Switched to Integrated mode.",
+  "hybrid.applied": "Switched to Hybrid mode.",
+  "smart.applied": "Switched to Smart mode.",
+
+  "settings.poll_interval_ms.label": "Poll interval (ms)",
+  "settings.poll_interval_ms.description": "How often the service checks the active cardwire mode."
+}
