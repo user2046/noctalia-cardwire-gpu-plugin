@@ -13,6 +13,11 @@ case). It exposes the three modes cardwire actually supports on a laptop:
 `manual` mode exists in cardwire too, but it's desktop-only (block/unblock
 individual GPU IDs) and isn't exposed here.
 
+## Warning and Credits
+This project is entirely vibecoded and has been tested only on niri, use it at your own risk.
+All credits go to https://github.com/OpenGamingCollective/cardwire for providing cardwire and 
+the creator of this plugin https://github.com/noctalia-dev/community-plugins/tree/main/asus-fan for providing
+a useful template to give to claude
 ## Requirements
 
 - `cardwire` installed and on `PATH` (declared in `dependencies` so it shows
