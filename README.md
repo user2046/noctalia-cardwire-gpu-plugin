@@ -17,7 +17,7 @@ individual GPU IDs) and isn't exposed here.
 This project is entirely vibecoded and has been tested only on niri, use it at your own risk.
 All credits go to https://github.com/OpenGamingCollective/cardwire for providing cardwire and 
 the creator of this plugin https://github.com/noctalia-dev/community-plugins/tree/main/asus-fan for providing
-a useful template to give to claude
+a useful template to give to Claude
 ## Requirements
 
 - `cardwire` installed and on `PATH` (declared in `dependencies` so it shows
@@ -39,6 +39,7 @@ a useful template to give to claude
 
 ## Install
 
+I will try to upload to the official community source soon, in the meantime you can do this:
 Drop this whole `cardwire-gpu/` directory under
 `$XDG_DATA_HOME/noctalia/plugins/cardwire-gpu/` (or add a path source
 pointing at wherever you keep it), then enable it from Noctalia's plugin
@@ -51,11 +52,6 @@ end = [
   # ...your other widgets
 ]
 ```
-
-If you plan to publish this to `community-plugins`, rename the `id`/`author`
-fields in `plugin.toml` from the `you/cardwire-gpu` placeholder to your own
-`<github-username>/cardwire-gpu`, and update the `PANEL_ID` string in
-`widget.luau` to match.
 
 ## Notes / caveats
 
